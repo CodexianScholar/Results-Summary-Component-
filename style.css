@@ -40,7 +40,72 @@ p {
 }
 
 #results-summary {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.results-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
+
+  border-radius: 25px;
+  width: 400px;
+  height: 560px;
+}
+
+.reults-heading {
+  color: var(--light-lavender);
+  padding: 2rem;
+}
+
+.score-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to top,
+    var(--persian-blue),
+    var(--violet-blue)
+  );
+  height: 200px;
+  width: 200px;
+}
+
+.large-number {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.small-number {
+  color: var(--light-lavender);
+}
+
+.results-rating {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin: 2rem 0rem;
+}
+
+.results-description {
+  text-align: center;
+  color: var(--light-lavender);
+  width: 65%;
+  line-height: 1.5;
+}
+
+.summary-container {
+  background-color: var(--white);
+  height: 560px;
 }
