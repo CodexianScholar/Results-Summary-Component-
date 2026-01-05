@@ -34,6 +34,11 @@
 body {
   background-color: var(--plae-blue);
 }
+
+p {
+  font-size: 18px;
+}
+
 #results-summary {
   display: flex;
   align-items: center;

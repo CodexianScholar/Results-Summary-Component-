@@ -14,7 +14,64 @@
   </head>
   <body>
     <main>
-      <div id="results-summary"></div>
+      <section id="results-summary">
+        <div class="results-container">
+          <h2 class="reults-heading">Your Result</h2>
+          <div class="score-circle">
+            <p class="large-number">76</p>
+            <p class="small-number">of 100</p>
+          </div>
+          <h3 class="results-rating">Great</h3>
+          <p class="results-description">
+            You scored higher than 65% of the people who have taken these test.
+          </p>
+        </div>
+
+        <div class="summary-container">
+          <h2 class="summary-heading">Summary</h2>
+          <div class="summary-list-container">
+            <!-- reaction -->
+            <div id="reaction" class="stat">
+              <div class="stat-text">
+                <img
+                  src="./assets/images/icon-reaction.svg"
+                  alt="Thunder bolt icon"
+                />
+                <p>Reaction</p>
+                <div class="stat-numbers"><span>80</span>/100</div>
+              </div>
+            </div>
+            <!-- Memory -->
+            <div id="memory" class="stat">
+              <div class="stat-text">
+                <img src="./assets/images/icon-memory.svg" alt="Brain icon" />
+                <p>Memory</p>
+                <div class="stat-numbers"><span>92</span>/100</div>
+              </div>
+            </div>
+            <!-- verbal -->
+            <div id="verbal" class="stat">
+              <div class="stat-text">
+                <img
+                  src="./assets/images/icon-verbal.svg"
+                  alt="chat bubble icon"
+                />
+                <p>Verbal</p>
+                <div class="stat-numbers"><span>61</span>/100</div>
+              </div>
+            </div>
+            <!-- Visual -->
+            <div id="Visual" class="stat">
+              <div class="stat-text">
+                <img src="./assets/images/icon-visual.svg" alt="Eye icon" />
+                <p>Visual</p>
+                <div class="stat-numbers"><span>73</span>/100</div>
+              </div>
+            </div>
+          </div>
+          <button id="btn">Continue</button>
+        </div>
+      </section>
     </main>
   </body>
 </html>
