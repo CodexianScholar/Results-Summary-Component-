@@ -135,11 +135,21 @@ span {
   padding-left: 2rem;
 }
 
+.summary-stats {
+  padding: 1.5rem 0rem;
+}
+
 .stats {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 1rem 2rem;
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+.stats:last-child {
+  margin-bottom: 1rem;
 }
 
 .stat-text {
@@ -201,9 +211,16 @@ span {
   background-color: var(--Cobalt-blue-bg);
 }
 
+.btn-container {
+  text-align: center;
+}
+
 #btn {
-  margin: 2rem;
+  margin: 1.5rem;
   padding: 1rem;
+  width: 340px;
+  height: 60px;
+  border-radius: 30px;
   background-color: var(--dark-gray-blue);
   color: var(--white);
   border: none;
@@ -214,7 +231,7 @@ span {
 
 #btn:hover {
   background-image: linear-gradient(
-    to right,
+    to bottom,
     var(--light-slate-blue),
     var(--light-royal-blue)
   );
