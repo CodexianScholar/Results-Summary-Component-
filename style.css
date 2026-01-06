@@ -2,7 +2,7 @@
   /* colors for project */
 
   /* Primary */
-  --light-right: hsl(0, 100%, 67%);
+  --light-red: hsl(0, 100%, 67%);
   --Orangey-yellow: hsl(39, 100%, 56%);
   --Green-teal: hsl(166, 100%, 37%);
   --Cobalt-blue: hsl(234, 85%, 45%);
@@ -12,6 +12,10 @@
   /* Background */
   --light-slate-blue: hsl(252, 100%, 67%);
   --light-royal-blue: hsl(241, 81%, 54%);
+  --light-red-bg: hsla(0, 100%, 67%, 0.1);
+  --Orangey-yellow-bg: hsla(39, 100%, 56%, 0.1);
+  --Green-teal-bg: hsla(166, 100%, 37%, 0.1);
+  --Cobalt-blue-bg: hsla(234, 85%, 45%, 0.1);
 
   /* circle */
   --violet-blue: hsla(256, 72%, 46%, 1);
@@ -35,21 +39,36 @@ body {
   background-color: var(--plae-blue);
 }
 
-p {
-  font-size: 18px;
-}
-
-#results-summary {
+main {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+p {
+  font-size: 18px;
+}
+
+span {
+  font-weight: bold;
+  opacity: 1;
+}
+
+.stat-number {
+  opacity: 0.5;
+}
+
+#results-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-radius: 25px;
+}
 
 .results-container {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
   background-image: linear-gradient(
     to bottom,
@@ -106,6 +125,97 @@ p {
 }
 
 .summary-container {
-  background-color: var(--white);
+  width: 400px;
   height: 560px;
+  padding-left: 0 2rem;
+}
+
+.summary-heading {
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+}
+
+.stat-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.stat-text p {
+  margin-left: 0.75rem; /* Space after icon */
+}
+
+.stat-numbers {
+  margin-left: auto; /* pushes 80 / 100 to the right */
+}
+
+.stat-label {
+  font-weight: bold;
+}
+
+.score {
+  color: var(--dark-gray-blue);
+  font-weight: bold;
+}
+
+.total {
+  color: var(--dark-gray-blue);
+  opacity: 0.5;
+}
+
+#reaction {
+  background-color: var(--light-red-bg);
+}
+
+#reaction .stat-label {
+  color: var(--light-red);
+}
+
+#memory {
+  background-color: var(--Orangey-yellow-bg);
+}
+
+#memory .stat-label {
+  color: var(--Orangey-yellow);
+}
+
+#verbal {
+  background-color: var(--Green-teal-bg);
+}
+
+#verbal .stat-label {
+  color: var(--Green-teal);
+}
+
+#visual .stat-label {
+  color: var(--Cobalt-blue);
+}
+#visual {
+  background-color: var(--Cobalt-blue-bg);
+}
+
+#btn {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-image: linear-gradient(
+    to right,
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
 }
